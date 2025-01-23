@@ -18,10 +18,6 @@ This assumes you already have a working Rust environment. If not, please see the
 
 Add the following to your `Cargo.toml` file:
 
-toml
-
-Copy
-
 ```toml
 [dependencies]
 routs = { git = "https://github.com/Murilinho145SG/Routs.git" }
@@ -36,10 +32,6 @@ Then, run `cargo build` to fetch and compile the library.
 ### Basic Example
 
 Here’s a simple example of how to use Routs to create an HTTP server with a single route:
-
-rust
-
-Copy
 
 ```rust
 use routs::{Router, HttpRequest, Writer};
@@ -98,10 +90,6 @@ async fn main() {
 ### Enabling TLS/SSL
 
 To enable secure connections, use the `init_tls` function and provide paths to your certificate and key files:
-
-rust
-
-Copy
 
 ```rust
 #[tokio::main]

@@ -1,0 +1,53 @@
+// pub fn init(router: Router, addrs: &str) {
+//     let listener = TcpListener::bind(addrs);
+
+//     if let Err(e) = listener {
+//         panic!("Failed to bind address: {}", e);
+//     }
+
+//     let listener = listener.unwrap();
+
+//     for stream in listener.incoming() {
+//         if let Err(e) = &stream {
+//             println!("Failed to establish a connection: {}", e);
+//         }
+
+//         let mut stream = stream.unwrap();
+//         let mut buffer = DynamicBuffer::new();
+//         if let Err(e) = buffer.read_from_stream(&mut stream) {
+//             println!("Failed to read from stream: {}", e);
+//         }
+
+//         let req = HttpRequest::parser(buffer.as_bytes());
+//         if let Err(e) = &req {
+//             println!("Failed to parse request: {}", e);
+//         }
+
+//         let req = req.unwrap();
+
+//         let mut writer = Writer {
+//             header: Header::new(),
+//             body: Vec::new(),
+//             status_code: 200,
+//         };
+
+//         if let Some(handler) = router.get_handler(&req.path) {
+//             handler(&mut writer, req);
+//             let response = HttpResponse {
+//                 status_code: writer.status_code,
+//                 headers: writer.header().headers.clone(),
+//                 body: writer.body
+//             };
+
+//                 send_response(&mut stream, response);
+
+//         } else {
+//             let response = HttpResponse {
+//                 status_code: 404,
+//                 headers: HashMap::new(),
+//                 body: b"Not Found".to_vec(),
+//             };
+//                 send_response(&mut stream, response);
+//         }
+//     }
+// }

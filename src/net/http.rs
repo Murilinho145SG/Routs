@@ -5,7 +5,6 @@ use tokio_rustls::TlsAcceptor;
 
 use super::{buffer::DynamicBuffer, ssl_tls::configure_tls};
 
-#[derive(Debug)]
 pub struct HttpRequest {
     pub method: String,
     pub path: String,

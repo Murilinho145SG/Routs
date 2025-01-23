@@ -22,9 +22,9 @@ toml
 
 Copy
 
-```rust
+```toml
 [dependencies]
-routs = { git = "https://github.com/your-repo/routs.git" }
+routs = { git = "https://github.com/Murilinho145SG/Routs.git" }
 ```
 
 Then, run `cargo build` to fetch and compile the library.

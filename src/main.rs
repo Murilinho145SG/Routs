@@ -1,9 +1,9 @@
 use std::sync::Arc;
 
-use net::http::{self, HttpRequest, Writer};
+use routs::http::{self, HttpRequest, Writer};
 use serde_json::json;
 
-mod net;
+mod routs;
 
 #[tokio::main]
 async fn main() {

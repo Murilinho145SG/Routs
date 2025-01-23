@@ -2,8 +2,6 @@
 
 **Rust Reference** | **CI** | **Rust API**
 
-![Routs Logo]("")
-
 **Routs** is a Rust library that provides a lightweight and asynchronous HTTP server implementation. It is designed to handle routing, request parsing, and response generation with ease. Routs supports TLS/SSL for secure connections and allows you to define custom handlers and middlewares for your routes.
 
 If you would like to contribute to Routs or report issues, please visit the [GitHub repository](https://github.com/Murilinho145SG/Ro).
@@ -139,7 +137,7 @@ async fn main() {
 
 ## Contributing
 
-Contributions are welcome! If you’d like to contribute to Routs, please:
+Contributions are welcome! If you like to contribute to Routs, please:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
@@ -149,8 +147,8 @@ Contributions are welcome! If you’d like to contribute to Routs, please:
 
 ## License
 
-Routs is licensed under the MIT License. See the [LICENSE](https://chat.deepseek.com/a/chat/s/5ac7a2d0-551a-4898-8334-9fb537d2a59f#) file for details.
+Routs is licensed under the MIT License. See the [LICENSE](https://github.com/Murilinho145SG/Routs/blob/main/LICENSE) file for details.
 
 ---
 
-Feel free to customize this further to match your project’s branding or specific details!
+Feel free to customize this further to match your projects branding or specific details!

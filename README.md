@@ -4,7 +4,7 @@
 
 **Routs** is a Rust library that provides a lightweight and asynchronous HTTP server implementation. It is designed to handle routing, request parsing, and response generation with ease. Routs supports TLS/SSL for secure connections and allows you to define custom handlers and middlewares for your routes.
 
-If you would like to contribute to Routs or report issues, please visit the [GitHub repository](https://github.com/Murilinho145SG/Ro).
+If you would like to contribute to Routs or report issues, please visit the [GitHub repository](https://github.com/Murilinho145SG/Routs).
 
 For help with this library or general Rust discussion, feel free to join the Rust community channels.
 

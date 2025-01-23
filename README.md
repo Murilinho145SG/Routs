@@ -56,10 +56,6 @@ async fn main() {
 
 You can easily add middlewares to your handlers. Here’s an example:
 
-rust
-
-Copy
-
 ```rust
 use routs::{Router, HttpRequest, Writer, Handler};
 use std::sync::Arc;

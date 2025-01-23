@@ -22,7 +22,7 @@ toml
 
 Copy
 
-```
+```rust
 [dependencies]
 routs = { git = "https://github.com/your-repo/routs.git" }
 ```
@@ -41,7 +41,7 @@ rust
 
 Copy
 
-```
+```rust
 use routs::{Router, HttpRequest, Writer};
 use std::sync::Arc;
 
@@ -68,7 +68,7 @@ rust
 
 Copy
 
-```
+```rust
 use routs::{Router, HttpRequest, Writer, Handler};
 use std::sync::Arc;
 
@@ -103,7 +103,7 @@ rust
 
 Copy
 
-```
+```rust
 #[tokio::main]
 async fn main() {
     let mut router = Router::new();

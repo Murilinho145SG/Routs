@@ -1,7 +1,6 @@
 use std::sync::Arc;
 
-use routs::http::{self, HttpRequest, Writer};
-use serde_json::json;
+use routs::http::{self, HttpRequest, HttpStatus, Writer};
 
 mod routs;
 
@@ -12,14 +11,16 @@ async fn main() {
     router.handle_func("/", Arc::new(|w: &mut Writer, r: HttpRequest| {
             w.header().set("Access-Control-Allow-Methods", "GET");
 
-            if r.method != "GET" {
-                w.write_header(405);
+            if r.method != "POST" {
+                w.write_header(HttpStatus::MethodNotAllowed);
                 return;
             }
 
-            w.write(json!({"message": "Hello World!"}).to_string().as_bytes());
+            println!("{}", String::from_utf8_lossy(&r.body));
+
+            w.write_header(HttpStatus::OK);
         }),
     );
 
-    http::init(router, "0.0.0.0:7643").await;
+    http::init(router, "0.0.0.0:8080").await;
 }
